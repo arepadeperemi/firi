@@ -1,0 +1,13 @@
+/*CustomNotification(height: 300, color: ThemeColor.white, drawable: true).notificationModal(
+            context,
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Icon(Icons.warning_rounded, size: 50),
+                  SizedBox(height: 30),
+                  Text('Location services are disabled. Please enable the services'),
+                ],
+              ),
+            )
+        );*/

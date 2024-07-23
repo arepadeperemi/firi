@@ -1,0 +1,168 @@
+name: craftmani
+description: Find craftment around you in a matter of seconds
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  lottie: ^2.3.2
+  transition: ^2.0.2
+  http: ^0.13.6
+  flutter_animate: ^4.1.1+1
+  dropdown_button2: ^2.1.0
+  csc_picker: ^0.2.7
+  country_picker: ^2.0.20
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  flutter_rating_bar: ^4.0.1
+  intl: ^0.18.1
+  flutter_switch: ^0.3.2
+  dependencies:
+  tab_container: ^2.0.0
+  curved_navigation_bar: ^1.0.3
+  flutter_session_manager: ^1.0.3
+  crypto: ^3.0.3
+  flutter_staggered_grid_view: ^0.6.2
+  flutter_svg: ^2.0.5
+  super_tooltip: ^2.0.7
+  get: ^4.6.5
+  iconsax: ^0.0.8
+  carousel_slider: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/images/
+     - assets/fonts/
+     - assets/lottie/
+     - assets/json/
+     - assets/svg/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+     - family: Queensides
+       fonts:
+         - asset: assets/fonts/QueensidesMedium-x30zV.ttf
+         - asset: assets/fonts/QueensidesLight-ZVj3l.ttf
+         - asset: assets/fonts/Queensides-3z7Ey.ttf
+           style: italic
+
+     - family: Minomu
+       fonts:
+         - asset: assets/fonts/MinomuBlack-BWVKV.otf
+         - asset: assets/fonts/MinomuBlackitalic-8MVJD.otf
+         - asset: assets/fonts/MinomuBolditalic-YzxDj.otf
+         - asset: assets/fonts/MinomuBold-rgXoO.otf
+         - asset: assets/fonts/MinomuDemibolditalic-K7qXo.otf
+         - asset: assets/fonts/MinomuDemibold-MVxoe.otf
+         - asset: assets/fonts/MinomuExtrabold-2OVx8.otf
+         - asset: assets/fonts/MinomuExtrabolditalic-vm0WM.otf
+         - asset: assets/fonts/MinomuExtralightitalic-7BGVV.otf
+         - asset: assets/fonts/MinomuExtralight-w19az.otf
+         - asset: assets/fonts/MinomuHeavyitalic-d9BYR.otf
+         - asset: assets/fonts/MinomuHeavy-mL7d9.otf
+         - asset: assets/fonts/MinomuItalic-PKxeB.otf
+         - asset: assets/fonts/MinomuLightitalic-X3zpg.otf
+         - asset: assets/fonts/MinomuLight-L3xgn.otf
+         - asset: assets/fonts/MinomuMediumitalic-gxrKq.otf
+         - asset: assets/fonts/MinomuMedium-owd8B.otf
+         - asset: assets/fonts/MinomuRegular-4BV0B.otf
+         - asset: assets/fonts/MinomuThin-0WVXv.otf
+         - asset: assets/fonts/MinomuThinitalic-eZ8Ae.otf
+
+     - family: Bandar
+       fonts:
+         - asset: assets/fonts/BandarOutline-YzOyo.ttf
+         - asset: assets/fonts/BandarOutline-BWYjx.otf
+         - asset: assets/fonts/Bandar-K7EO7.ttf
+         - asset: assets/fonts/BandarItalic-MVdOY.ttf
+         - asset: assets/fonts/BandarItalic-lgL8y.otf
+         - asset: assets/fonts/BandarBoldItalic-rgdr7.ttf
+         - asset: assets/fonts/BandarBoldItalic-nRXrP.otf
+         - asset: assets/fonts/BandarBold-8Mj40.otf
+         - asset: assets/fonts/BandarBold-1GZ2g.ttf
+
+     - family: Poppins
+       fonts:
+         - asset: assets/fonts/Poppins-Black.ttf
+         - asset: assets/fonts/Poppins-BlackItalic.ttf
+         - asset: assets/fonts/Poppins-Bold.ttf
+         - asset: assets/fonts/Poppins-BoldItalic.ttf
+         - asset: assets/fonts/Poppins-ExtraBold.ttf
+         - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+         - asset: assets/fonts/Poppins-ExtraLight.ttf
+         - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+         - asset: assets/fonts/Poppins-Italic.ttf
+         - asset: assets/fonts/Poppins-Light.ttf
+         - asset: assets/fonts/Poppins-LightItalic.ttf
+         - asset: assets/fonts/Poppins-Medium.ttf
+         - asset: assets/fonts/Poppins-MediumItalic.ttf
+         - asset: assets/fonts/Poppins-Regular.ttf
+         - asset: assets/fonts/Poppins-SemiBold.ttf
+         - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+         - asset: assets/fonts/Poppins-Thin.ttf
+         - asset: assets/fonts/Poppins-ThinItalic.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
