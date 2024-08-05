@@ -23,11 +23,11 @@ class SubmitButton extends StatelessWidget {
       ),
       child: isLoading == false ? Text(text,
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
               color: Colors.white
           )
       ) : Container(
-        padding: EdgeInsets.symmetric(vertical: 15),
+        padding: const EdgeInsets.symmetric(vertical: 15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -35,7 +35,7 @@ class SubmitButton extends StatelessWidget {
               width: 50,
               height: 50,
             ),
-            Text('Please wait . . .',
+            const Text('Please wait . . .',
               style: TextStyle(
                 fontSize: 10,
                 fontWeight: FontWeight.bold,

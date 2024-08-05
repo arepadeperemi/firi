@@ -24,23 +24,23 @@ class _CraftMenState extends State<CraftMen> {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)
                   ),
-                  child: Text('Craft Men',
+                  child: const Text('Craft Men',
                     style: TextStyle(
                         fontSize: 10
                     ),
                   )
               ),
-              Text('See all',
+              const Text('See all',
                 style: TextStyle(
                     fontSize: 12
                 ),
@@ -51,14 +51,14 @@ class _CraftMenState extends State<CraftMen> {
         const SizedBox(height: 10,),
         ListView.builder(
             shrinkWrap: true,
-            padding: EdgeInsets.only(top: 0),
-            physics: ScrollPhysics(),
+            padding: const EdgeInsets.only(top: 0),
+            physics: const ScrollPhysics(),
             itemBuilder:(_, index) => GestureDetector(
-              onTap: () => Get.toNamed("/craftmen_details?name=${name}&image=${image}&craft=${craft}&description=${description}"),
+              onTap: () => Get.toNamed("/craftmen_details?name=$name&image=$image&craft=$craft&description=$description"),
               child: Container(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 margin: EdgeInsets.only(bottom: index == (total_count -1) ? 70 : 10),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
 
                 ),
@@ -69,40 +69,40 @@ class _CraftMenState extends State<CraftMen> {
                       CircleAvatar(
                         backgroundImage: AssetImage(image),
                       ),
-                      SizedBox(width: 10,),
+                      const SizedBox(width: 10,),
                       Expanded(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(name,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 14
                               ),
                             ),
-                            SizedBox(height: 5),
+                            const SizedBox(height: 5),
                             Row(
                               children: [
-                                Icon(Icons.work, size: 10, color: Colors.black54),
-                                SizedBox(width: 5,),
+                                const Icon(Icons.work, size: 10, color: Colors.black54),
+                                const SizedBox(width: 5,),
                                 Text(craft,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 10,
                                       color: Colors.black54
                                   ),),
-                                SizedBox(width: 5,),
-                                Icon(Icons.location_on_rounded, size: 10, color: Colors.black54),
-                                SizedBox(width: 5,),
+                                const SizedBox(width: 5,),
+                                const Icon(Icons.location_on_rounded, size: 10, color: Colors.black54),
+                                const SizedBox(width: 5,),
                                 Text(proximity,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 10,
                                       color: Colors.black54
                                   ),),
                               ],
                             ),
-                            SizedBox(height: 10,),
+                            const SizedBox(height: 10,),
                             Text(description,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 10
                               ),
                             ),

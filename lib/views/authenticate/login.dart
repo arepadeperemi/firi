@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:craftmani/api/request.dart';
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/pages/client_home.dart';
 import 'package:craftmani/views/app_home/screens/craft_men/craft_man_home.dart';
@@ -10,7 +9,6 @@ import 'package:flutter_session_manager/flutter_session_manager.dart';
 import 'package:transition/transition.dart';
 
 import '../../api/convert.dart';
-import '../../widgets/back_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -119,22 +117,22 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              PreviousPage(color: ThemeColor.black),
-              SizedBox(height: 20),
-              BrandLogo(
+              const PreviousPage(color: ThemeColor.black),
+              const SizedBox(height: 20),
+              const BrandLogo(
                 alignment: MainAxisAlignment.start,
                 size: 60,
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
 
-              HeaderText(text: 'Welcome to CraftMani'),
-              SizedBox(height: 10),
-              DescriptionText(text: 'Login to your account to find craft men near your current location'),
-              SizedBox(height: 20),
+              const HeaderText(text: 'Welcome to CraftMani'),
+              const SizedBox(height: 10),
+              const DescriptionText(text: 'Login to your account to find craft men near your current location'),
+              const SizedBox(height: 20),
               CustomAlert(infoText: serverResponse),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               CustomInput(labelText: 'Phone', icon: Icons.phone, inputAction: TextInputAction.next, inputController: numberController, inputType: TextInputType.phone, inputError: numberField,),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               CustomInput(labelText: 'Password', isPassword: true, icon: Icons.lock, inputAction: TextInputAction.done, inputController: passwordController, inputType: TextInputType.text, inputError: passwordField,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -153,9 +151,9 @@ class _LoginPageState extends State<LoginPage> {
                       }),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
-                margin: EdgeInsets.only(bottom: 50),
+                margin: const EdgeInsets.only(bottom: 50),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -171,8 +169,8 @@ class _LoginPageState extends State<LoginPage> {
                         height: 30,
                       ),
                     ),
-                    SizedBox(height: 5),
-                    Text('Google signin',
+                    const SizedBox(height: 5),
+                    const Text('Google signin',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: ThemeColor.black,
@@ -189,11 +187,11 @@ class _LoginPageState extends State<LoginPage> {
       ),
       bottomNavigationBar: Container(
         color: Colors.transparent,
-        padding: EdgeInsets.only(bottom: 40, right: 20, left: 20),
+        padding: const EdgeInsets.only(bottom: 40, right: 20, left: 20),
         child: GestureDetector(
           onTap: () => {
-            setState(() => {
-              loginUser()
+            setState(() {
+              loginUser();
             })
           },
             child: SubmitButton(text: "Login", isLoading: isLogin)),

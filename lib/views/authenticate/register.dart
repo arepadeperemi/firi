@@ -1,10 +1,8 @@
 import 'dart:convert';
 import 'package:craftmani/views/authenticate/register_client_1.dart';
 import 'package:flutter_session_manager/flutter_session_manager.dart';
-import 'package:craftmani/api/request.dart';
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/authenticate/register_craftman_1.dart';
-import 'package:craftmani/widgets/back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:transition/transition.dart';
 
@@ -31,8 +29,8 @@ class _RegisterOneState extends State<RegisterOne> {
 
   selectedValue(index){
 
-    setState(() => {
-      selected = index
+    setState(() {
+      selected = index;
     });
     switch(selected){
       case 0:
@@ -103,7 +101,7 @@ class _RegisterOneState extends State<RegisterOne> {
     return Scaffold(
       backgroundColor: ThemeColor.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -123,14 +121,14 @@ class _RegisterOneState extends State<RegisterOne> {
                           selectedValue(index)
                         },
                         child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
                             color: ThemeColor.white,
                             boxShadow: [
                               BoxShadow(
                                 color: ThemeColor.black.withOpacity(0.1),
-                                offset: Offset(-1, 5),
+                                offset: const Offset(-1, 5),
                                 blurRadius: 8,
                               )
                             ],
@@ -145,9 +143,9 @@ class _RegisterOneState extends State<RegisterOne> {
                                 size: 16,
                                 color: selected == index ? ThemeColor.primary : ThemeColor.black,
                               ),
-                              SizedBox(width: 10,),
+                              const SizedBox(width: 10,),
                               Text(options[index],
-                                style: TextStyle(
+                                style: const TextStyle(
                                   //fontWeight: FontWeight.bold,
                                   fontSize: 12,
                                   fontFamily: "Poppins"
@@ -157,7 +155,7 @@ class _RegisterOneState extends State<RegisterOne> {
                           ),
                         ),
                       ),
-                      separatorBuilder: (_, index) => SizedBox(height: 10),
+                      separatorBuilder: (_, index) => const SizedBox(height: 10),
                       itemCount: options.length
                   ),
                 )

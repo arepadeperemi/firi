@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:craftmani/exports.dart';
 
 class MenuList extends StatelessWidget {
 
@@ -25,7 +24,7 @@ class MenuList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(title,
-              style: TextStyle(
+              style: const TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.bold
               )

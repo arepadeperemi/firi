@@ -34,8 +34,8 @@ class _CustomInputState extends State<CustomInput> {
     return Stack(
       children: [
         Container(
-          margin: EdgeInsets.only(top: 17),
-          padding: EdgeInsets.only(left: 20, top: 5, right: 20, bottom: 10),
+          margin: const EdgeInsets.only(top: 17),
+          padding: const EdgeInsets.only(left: 20, top: 5, right: 20, bottom: 10),
           width: MediaQuery.of(context).size.width,
           height: 60,
           decoration: BoxDecoration(
@@ -54,8 +54,8 @@ class _CustomInputState extends State<CustomInput> {
             decoration: InputDecoration(
               border: InputBorder.none,
               errorText: widget.inputError,
-              contentPadding: EdgeInsets.symmetric(vertical: 5),
-              errorStyle: TextStyle(
+              contentPadding: const EdgeInsets.symmetric(vertical: 5),
+              errorStyle: const TextStyle(
                 color: ThemeColor.red,
                 fontSize: 10
               )
@@ -68,8 +68,8 @@ class _CustomInputState extends State<CustomInput> {
           ),
         ),
         Container(
-          padding: EdgeInsets.all(7),
-          margin: EdgeInsets.only(left: 30),
+          padding: const EdgeInsets.all(7),
+          margin: const EdgeInsets.only(left: 30),
           color: ThemeColor.white,
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -79,9 +79,9 @@ class _CustomInputState extends State<CustomInput> {
                 widget.icon,
                 size: 15,
               ),
-              SizedBox(width: 5),
+              const SizedBox(width: 5),
               Text(widget.labelText,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 12
                 ),
               ),

@@ -1,7 +1,6 @@
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/authenticate/login.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_session_manager/flutter_session_manager.dart';
 
 class SupportScreen extends StatefulWidget {

@@ -28,7 +28,7 @@ class CustomNotification {
                 Container(
                   height: 4,
                   width: 50,
-                  margin: EdgeInsets.only(top: 4),
+                  margin: const EdgeInsets.only(top: 4),
                   decoration: BoxDecoration(
                       color: ThemeColor.black.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(10)

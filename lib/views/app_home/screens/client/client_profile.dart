@@ -1,7 +1,6 @@
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/screens/shared/edit_user_phone.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:transition/transition.dart';
 
 import '../shared/edit_user_name.dart';
@@ -19,14 +18,14 @@ class _ClientProfileScreenState extends State<ClientProfileScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Container(
-          margin: EdgeInsets.only(top: 40),
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          margin: const EdgeInsets.only(top: 40),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text('Profile',
                   style: TextStyle(
                     fontFamily: 'Poppins'
@@ -35,10 +34,10 @@ class _ClientProfileScreenState extends State<ClientProfileScreen> {
                   Icon(Icons.notifications)
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 width: double.maxFinite,
-                padding: EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.symmetric(vertical: 10),
                 decoration: BoxDecoration(
                   color: ThemeColor.white,
                   borderRadius: BorderRadius.circular(8)
@@ -61,9 +60,9 @@ class _ClientProfileScreenState extends State<ClientProfileScreen> {
                                 )
                             )
                         ),
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text('Arepade Peremi'),
                             Icon(Icons.arrow_forward_ios, size: 14)
                           ],
@@ -78,9 +77,9 @@ class _ClientProfileScreenState extends State<ClientProfileScreen> {
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                         width: double.maxFinite,
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text('09075764656'),
                             Icon(Icons.arrow_forward_ios, size: 14)
                           ],
@@ -117,9 +116,9 @@ class _ClientProfileScreenState extends State<ClientProfileScreen> {
                         )
                       )
                     ),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
+                      children: [
                         Icon(Icons.phone, size: 14),
                         SizedBox(width: 10),
                         Expanded(

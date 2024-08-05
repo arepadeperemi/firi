@@ -23,11 +23,11 @@ class _EditUserNameState extends State<EditUserName> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            margin: EdgeInsets.only(top: 20),
-            child: SafeArea(
+            margin: const EdgeInsets.only(top: 20),
+            child: const SafeArea(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   PreviousPage(icon: Icons.arrow_back_ios_rounded, color: ThemeColor.black,size: 30),
                   SizedBox(width: 10),
                   Text('Full Name',
@@ -73,7 +73,7 @@ class _EditUserNameState extends State<EditUserName> {
                   //updateAddress();
                 });
               },
-              child: SubmitButton(text: "Update")
+              child: const SubmitButton(text: "Update")
           ),
         )
     );

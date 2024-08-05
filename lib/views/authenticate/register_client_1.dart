@@ -1,15 +1,11 @@
 import 'dart:convert';
 
 import 'package:craftmani/exports.dart';
-import 'package:craftmani/views/authenticate/register_client_3.dart';
 import 'package:craftmani/views/authenticate/register_client_2.dart';
-import 'package:craftmani/views/authenticate/register_craftman_3.dart';
-import 'package:craftmani/widgets/back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_session_manager/flutter_session_manager.dart';
 import 'package:transition/transition.dart';
 
-import '../../api/request.dart';
 
 class RegisterClientOne extends StatefulWidget {
 
@@ -64,18 +60,18 @@ class _RegisterClientOneState extends State<RegisterClientOne> {
     return Scaffold(
       backgroundColor: ThemeColor.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              PreviousPage(icon: Icons.keyboard_arrow_down, color: ThemeColor.black),
-              SizedBox(height: 100,),
-              HeaderText(text: "Hello Client"),
-              SizedBox(height: 10),
-              Row(
+              const PreviousPage(icon: Icons.keyboard_arrow_down, color: ThemeColor.black),
+              const SizedBox(height: 100,),
+              const HeaderText(text: "Hello Client"),
+              const SizedBox(height: 10),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Expanded(child: DescriptionText(text: "Please proceed to enter your full name")),
                   Text('1 / 3',
                     style: TextStyle(
@@ -85,7 +81,7 @@ class _RegisterClientOneState extends State<RegisterClientOne> {
                   )
                 ],
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               CustomInput(
                 labelText: 'Full Name',
                 inputAction: TextInputAction.done,

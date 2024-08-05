@@ -11,7 +11,7 @@ class SettingsMenuItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(color: border == false ? Colors.transparent : ThemeColor.black.withOpacity(0.2), width: 0.4),
@@ -25,28 +25,28 @@ class SettingsMenuItem extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width - 100,
                   child: Text(text,
                     overflow: TextOverflow.fade,
-                    style: TextStyle(
+                    style: const TextStyle(
                       //fontWeight: FontWeight.bold,
                       fontFamily: 'Poppins'
                     ),
                   )
               ),
-              SizedBox(height: 4),
-              Container(
+              const SizedBox(height: 4),
+              SizedBox(
                 width: MediaQuery.of(context).size.width - 100,
                 child: Text(description,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 10,
                   ),
                 ),
               )
             ],
           ),
-          Icon(Icons.arrow_forward_ios_rounded)
+          const Icon(Icons.arrow_forward_ios_rounded)
         ],
       ),
     );

@@ -18,14 +18,14 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
   var userId = "";
 
   ScrollController scrollMedia = ScrollController();
-  ScrollController _ScrollViewControler = ScrollController();
+  final ScrollController _ScrollViewControler = ScrollController();
 
   var url = "https://winexexpress.com/wp-content/uploads/2016/01/";
 
   void userCatalogue() async {
     try {
-      dynamic user_id = await SessionManager().get('user_token');
-      userId = user_id;
+      dynamic userId = await SessionManager().get('user_token');
+      userId = userId;
       var data = {
         'request': 'getCatalogue',
         'user_id': await SessionManager().get('user_token')

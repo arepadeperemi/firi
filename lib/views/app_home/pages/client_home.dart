@@ -35,16 +35,16 @@ class _ClientHomeState extends State<ClientHome> {
         return closePage();
       },
       child: Scaffold(
-        backgroundColor: Color(0xFFEEEEEE),
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.only(bottom: 20),
+            padding: const EdgeInsets.only(bottom: 20),
             child: pages[currentIndex],
           ),
         ),
         bottomNavigationBar: CurvedNavigationBar(
           buttonBackgroundColor: ThemeColor.primary,
-          backgroundColor: Color(0xFFEEEEEE),
+          backgroundColor: const Color(0xFFEEEEEE),
           color: ThemeColor.primary,
           height: 60,
           index: 0,

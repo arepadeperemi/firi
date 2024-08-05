@@ -12,7 +12,7 @@ class AppIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(5),
+      padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: ThemeColor.black.withOpacity(0.5)
@@ -23,7 +23,7 @@ class AppIcon extends StatelessWidget {
             color: ThemeColor.white, size: 20,
           ),
           Container(
-              margin: EdgeInsets.only(left: 14, top: 10),
+              margin: const EdgeInsets.only(left: 14, top: 10),
               child: alert == true ?  const Icon(Icons.circle, size: 8, color: Colors.red,): Container()
           )
         ],

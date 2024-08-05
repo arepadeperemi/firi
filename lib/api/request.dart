@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 class Requests
 {
-  final String api = "http://192.168.0.109:100";
+  final String api = "http://192.168.1.8:100";
 
   _setHeaders() => {
     'Content-Type': 'application/json; charset=UTF-8',

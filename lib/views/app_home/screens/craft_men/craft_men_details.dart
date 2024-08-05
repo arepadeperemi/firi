@@ -1,4 +1,3 @@
-import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/screens/craft_men/widgets/flex_text.dart';
 import 'package:craftmani/views/app_home/screens/houses/widget/prev_button.dart';
 import 'package:craftmani/views/app_home/screens/craft_men/reviews.dart';
@@ -19,14 +18,14 @@ class _CraftMenDetailsState extends State<CraftMenDetails> {
 
 
   List titles = <Widget>[
-    FlexText(text: "Reviews", icon: Iconsax.profile_2user),
-    FlexText(text: "Catalog", icon: Iconsax.picture_frame),
-    FlexText(text: "Write review", icon: Icons.comment,)
+    const FlexText(text: "Reviews", icon: Iconsax.profile_2user),
+    const FlexText(text: "Catalog", icon: Iconsax.picture_frame),
+    const FlexText(text: "Write review", icon: Icons.comment,)
   ];
 
   List titleScreens = <Widget>[
-    ReviewsScreen(),
-    CatalogueScreen(),
+    const ReviewsScreen(),
+    const CatalogueScreen(),
     Container()
   ];
 
@@ -42,45 +41,45 @@ class _CraftMenDetailsState extends State<CraftMenDetails> {
               fontSize: 12
           ),
           child: Container(
-            padding: EdgeInsets.only(left: 20, right: 20, top: 50),
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 50),
             color: Colors.white,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                PrevButton(),
-                SizedBox(height: 20,),
+                const PrevButton(),
+                const SizedBox(height: 20,),
                 CircleAvatar(
                   radius: 40,
                   backgroundImage: AssetImage("${Get.parameters['image']}"),
                 ),
-                SizedBox(height: 16,),
+                const SizedBox(height: 16,),
                 Text("${Get.parameters['name']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18
                   ),),
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 Text("${Get.parameters['description']}",
-                style: TextStyle(
+                style: const TextStyle(
                   height: 1.5
                 ),),
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    FlexText(text: '2.5 Rating', icon: Icons.star),
-                    SizedBox(width: 10,),
-                    FlexText(text: "2km", icon: Icons.location_on_rounded),
-                    SizedBox(width: 10,),
+                    const FlexText(text: '2.5 Rating', icon: Icons.star),
+                    const SizedBox(width: 10,),
+                    const FlexText(text: "2km", icon: Icons.location_on_rounded),
+                    const SizedBox(width: 10,),
                     FlexText(text: "${Get.parameters['craft']}", icon: Icons.person),
                   ],
                 ),
-                SizedBox(height: 20,),
-                SizedBox(
+                const SizedBox(height: 20,),
+                const SizedBox(
                   width: 110,
                   child: FlexText(text: 'Make Call', icon: Icons.phone, isBordered: true),
                 ),
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 SizedBox(
                   height: 40,
                   width: MediaQuery.of(context).size.width,
@@ -94,7 +93,7 @@ class _CraftMenDetailsState extends State<CraftMenDetails> {
                         });
                       },
                       child: Container(
-                          padding: EdgeInsets.only(bottom: 10),
+                          padding: const EdgeInsets.only(bottom: 10),
                           decoration: BoxDecoration(
                               border: Border(
                                   bottom: index != currentSelect ? BorderSide.none : BorderSide(
@@ -104,7 +103,7 @@ class _CraftMenDetailsState extends State<CraftMenDetails> {
                           ),
                           child: titles[index]
                     )),
-                    separatorBuilder: (BuildContext context, int index) => SizedBox(width: 10,),
+                    separatorBuilder: (BuildContext context, int index) => const SizedBox(width: 10,),
                   ),
                 ),
                 Container(

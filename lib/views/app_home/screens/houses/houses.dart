@@ -23,9 +23,9 @@ class _HousesState extends State<Houses> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Categories(),
-        SizedBox(height: 10,),
-        Container(
+        const Categories(),
+        const SizedBox(height: 10,),
+        SizedBox(
           height: 200,
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -33,14 +33,17 @@ class _HousesState extends State<Houses> {
               SizedBox(
                 height: 200,
                 width: 60,
-                child: Center(
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                        color: ThemeColor.primary,
-                        borderRadius: BorderRadius.circular(100)
+                child: GestureDetector(
+                  onTap: () => Get.toNamed('/more-houses'),
+                  child: Center(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                          color: ThemeColor.primary,
+                          borderRadius: BorderRadius.circular(100)
+                      ),
+                      child: const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 16,)
                     ),
-                    child: Icon(Icons.arrow_forward_ios, color: Colors.white, size: 16,)
                   ),
                 ),
               ) :
@@ -49,7 +52,7 @@ class _HousesState extends State<Houses> {
                 child: Container(
                   width: 200,
                   height: 200,
-                  margin: EdgeInsets.symmetric(horizontal: 5),
+                  margin: const EdgeInsets.symmetric(horizontal: 5),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
@@ -59,7 +62,7 @@ class _HousesState extends State<Houses> {
                       image: DecorationImage(
                           image: AssetImage(property[index]),
                           fit: BoxFit.cover,
-                          colorFilter: ColorFilter.mode(Colors.black54, BlendMode.overlay)
+                          colorFilter: const ColorFilter.mode(Colors.black54, BlendMode.overlay)
                       )
                   ),
                   child: Column(
@@ -68,8 +71,8 @@ class _HousesState extends State<Houses> {
                     children: [
                       Container(),
                       Container(
-                        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                        decoration: const BoxDecoration(
                             color: Colors.black54,
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(10),
@@ -77,7 +80,7 @@ class _HousesState extends State<Houses> {
                             )
                         ),
                         child: Text(houseTitle,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white
                           ),
                         ),

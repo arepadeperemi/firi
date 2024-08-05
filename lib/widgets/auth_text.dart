@@ -13,7 +13,7 @@ class AuthText extends StatelessWidget {
     return TextButton(
         onPressed: onPressed,
         child: Text(text,
-          style: TextStyle(
+          style: const TextStyle(
               color: ThemeColor.black,
               fontWeight: FontWeight.bold,
               fontSize: 11

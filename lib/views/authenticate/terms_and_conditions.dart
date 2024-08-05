@@ -1,10 +1,8 @@
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/screens/craft_men/craft_man_home.dart';
-import 'package:craftmani/widgets/back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:transition/transition.dart';
 
-import '../../widgets/submit_button.dart';
 
 
 class TermsAndConditions extends StatefulWidget {
@@ -22,10 +20,10 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
       body: SingleChildScrollView(
         child: Container(
           width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.symmetric(vertical: 40, horizontal: 20),
-          child: Column(
+          padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               PreviousPage(color: ThemeColor.black),
               SizedBox(height: 70),
               HeaderText(text: 'Terms and Conditions'),

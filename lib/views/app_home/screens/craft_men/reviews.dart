@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:craftmani/exports.dart';
 
-import '../../../../api/request.dart';
 import '../../../../api/convert.dart';
 
 class ReviewsScreen extends StatefulWidget {
@@ -68,7 +67,7 @@ class _ReviewsScreenState extends State<ReviewsScreen> {
     return isFetching == false ? comments.isEmpty ?
       Container(
           alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(vertical: 50),
+          margin: const EdgeInsets.symmetric(vertical: 50),
           height: 100,
             child: const Text('No reviews yet fot this account')
         ): ListView.builder(

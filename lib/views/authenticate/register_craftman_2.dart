@@ -7,7 +7,6 @@ import 'package:flutter_session_manager/flutter_session_manager.dart';
 import 'package:transition/transition.dart';
 
 import '../../api/convert.dart';
-import '../../api/request.dart';
 
 
 
@@ -82,9 +81,9 @@ class _RegisterCraftManTwoState extends State<RegisterCraftManTwo> {
               const SizedBox(height: 100,),
               const HeaderText(text: "Password"),
               const SizedBox(height: 10),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Expanded(child: DescriptionText(text: "Set password to protect your account from being accessed randomly.")),
                   Text('2 / 5',
                     style: TextStyle(

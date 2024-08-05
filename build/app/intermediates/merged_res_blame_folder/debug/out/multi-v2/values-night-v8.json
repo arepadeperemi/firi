@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "craftmani.com.craftmani.app-mergeDebugResources-12:/values-night-v8/values-night-v8.xml",
+            "outputFile": "craftmani.com.craftmani.app-mergeDebugResources-18:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/peremi/studioProject/craftmani/android/app/src/main/res/values-night/styles.xml",
+                    "source": "C:\\Users\\The Tech Guy\\StudioProjects\\craftmani\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

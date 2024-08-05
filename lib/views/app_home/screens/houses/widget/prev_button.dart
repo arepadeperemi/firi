@@ -9,13 +9,13 @@ class PrevButton extends StatelessWidget {
     return GestureDetector(
       onTap: () => Get.back(),
       child: Container(
-          padding: EdgeInsets.all(7),
+          padding: const EdgeInsets.all(7),
           decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(color: Colors.black),
               borderRadius: BorderRadius.circular(100)
           ),
-          child: Icon(Icons.arrow_back_ios_new_rounded, size: 16,)
+          child: const Icon(Icons.arrow_back_ios_new_rounded, size: 16,)
       ),
     );
   }

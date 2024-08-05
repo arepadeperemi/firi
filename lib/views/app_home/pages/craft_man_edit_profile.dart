@@ -1,4 +1,3 @@
-import 'package:country_picker/country_picker.dart';
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/screens/shared/edit_craft_man_address.dart';
 import 'package:craftmani/views/app_home/screens/shared/edit_user_phone.dart';
@@ -37,12 +36,12 @@ class _CraftManEditProfileState extends State<CraftManEditProfile> {
               width: double.maxFinite,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/craftman_hands.jpg'),
+                  image: const AssetImage('assets/images/craftman_hands.jpg'),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(ThemeColor.black.withOpacity(0.5), BlendMode.darken)
                 ),
               ),
-              child: SafeArea(
+              child: const SafeArea(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -60,7 +59,7 @@ class _CraftManEditProfileState extends State<CraftManEditProfile> {
               ),
             ),
 
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column( 
@@ -74,22 +73,22 @@ class _CraftManEditProfileState extends State<CraftManEditProfile> {
                         height: 100,
                         width: 100,
                         alignment: Alignment.center,
-                        padding: EdgeInsets.all(30),
+                        padding: const EdgeInsets.all(30),
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: ThemeColor.primary,
                             image: DecorationImage(
-                              image: AssetImage('assets/images/peremi_avatar.jpg'),
+                              image: const AssetImage('assets/images/peremi_avatar.jpg'),
                               fit: BoxFit.cover,
                               colorFilter: ColorFilter.mode(ThemeColor.black.withOpacity(0.5), BlendMode.darken)
                             )
                         ),
-                        child: Image(
+                        child: const Image(
                           image: AssetImage('assets/images/007_043_edit_image_painting_photo_picture_gallery_album-1024-741502609'),
                           color: ThemeColor.white,
                         ),
                       ),
-                      SizedBox(width: 20),
+                      const SizedBox(width: 20),
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.only(top: 20),
@@ -98,7 +97,7 @@ class _CraftManEditProfileState extends State<CraftManEditProfile> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
 
-                              Icon(Icons.edit_note_outlined),
+                              const Icon(Icons.edit_note_outlined),
                               TextField(
                                 controller: descriptionController,
                                 onChanged: (value){
@@ -107,7 +106,7 @@ class _CraftManEditProfileState extends State<CraftManEditProfile> {
                                 textInputAction: TextInputAction.done,
                                 maxLines: 3,
                                 maxLength: 100,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 12
                                 ),
                                 decoration: const InputDecoration(
@@ -128,18 +127,18 @@ class _CraftManEditProfileState extends State<CraftManEditProfile> {
             const SizedBox(height: 20),
             GestureDetector(
               onTap: (){
-                Navigator.push(context, Transition(child:EditUserName(), transitionEffect: TransitionEffect.RIGHT_TO_LEFT));
+                Navigator.push(context, Transition(child:const EditUserName(), transitionEffect: TransitionEffect.RIGHT_TO_LEFT));
               },
-              child: SettingsMenuItem(
+              child: const SettingsMenuItem(
                 text: 'Arepade Peremi',
                 description: "Here you change your full name. It doesn't necessarily need to be your official name. But it's good to have your name in sync.",
               ),
             ),
             GestureDetector(
               onTap: (){
-                Navigator.push(context, Transition(child:EditUserPhone(), transitionEffect: TransitionEffect.RIGHT_TO_LEFT));
+                Navigator.push(context, Transition(child:const EditUserPhone(), transitionEffect: TransitionEffect.RIGHT_TO_LEFT));
               },
-              child: SettingsMenuItem(
+              child: const SettingsMenuItem(
                 text: '+234 9067181502',
                 description: 'Change your phone number. Make sure it is correct. Clients can only reach you on here.',
               ),

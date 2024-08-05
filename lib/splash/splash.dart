@@ -55,13 +55,13 @@ class _SplashScreenState extends State<SplashScreen> {
               onTap: (){
                 //debugPrint(sess);
               },
-              child: BrandLogo(
+              child: const BrandLogo(
                 color: Colors.black,
                 size: 90,
               ),
             ),
-            SizedBox(height: 10),
-            Text('CraftMani',
+            const SizedBox(height: 10),
+            const Text('CraftMani',
               style: TextStyle(
                 color: ThemeColor.black,
                 fontSize: 18,
@@ -73,9 +73,9 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
       bottomNavigationBar: Container(
         padding: const EdgeInsets.only(bottom: 20),
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Text('Powered by ',
               textAlign: TextAlign.center,
             ),

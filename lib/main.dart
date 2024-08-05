@@ -1,5 +1,6 @@
 import 'package:craftmani/views/app_home/screens/craft_men/craft_men_details.dart';
 import 'package:craftmani/views/app_home/screens/houses/house_details.dart';
+import 'package:craftmani/views/app_home/screens/houses/house_more.dart';
 import 'package:craftmani/views/app_home/screens/houses/houses.dart';
 import 'package:craftmani/views/app_home/screens/suggested/suggested_details.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +16,11 @@ void main() => runApp(GetMaterialApp(
   home: const SplashScreen(),
   defaultTransition: Transition.rightToLeft,
   getPages: [
-    GetPage(name: '/houses', page: () => Houses()),
+    GetPage(name: '/houses', page: () => const Houses()),
     GetPage(name: '/house_details', page: () => const HouseDetails()),
     GetPage(name: '/craftmen_details', page: () => const CraftMenDetails()),
-    GetPage(name: '/suggested-details', page: () => SuggestedDetails())
+    GetPage(name: '/suggested-details', page: () => const SuggestedDetails()),
+    GetPage(name: '/more-houses', page: () => const HouseMore())
   ],
 ));
 

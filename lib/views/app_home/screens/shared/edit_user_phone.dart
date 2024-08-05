@@ -31,11 +31,11 @@ class _EditUserPhoneState extends State<EditUserPhone> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.only(top: 20),
-              child: SafeArea(
+              margin: const EdgeInsets.only(top: 20),
+              child: const SafeArea(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: const [
+                  children: [
                     PreviousPage(icon: Icons.arrow_back_ios_rounded, color: ThemeColor.black,size: 30),
                     SizedBox(width: 10),
                     Text('Phone Number',
@@ -61,7 +61,7 @@ class _EditUserPhoneState extends State<EditUserPhone> {
                         onTap: () => {
                           showCountryPicker(
                             context: context,
-                            countryListTheme: CountryListThemeData(
+                            countryListTheme: const CountryListThemeData(
                               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                               margin: EdgeInsets.only(top: 40),
                               inputDecoration: InputDecoration(
@@ -80,8 +80,8 @@ class _EditUserPhoneState extends State<EditUserPhone> {
                         },
                         child: Container(
                           width: 75,
-                          margin: EdgeInsets.only(top: 18),
-                          padding: EdgeInsets.symmetric(vertical: 22, horizontal: 10),
+                          margin: const EdgeInsets.only(top: 18),
+                          padding: const EdgeInsets.symmetric(vertical: 22, horizontal: 10),
                           decoration: BoxDecoration(
                             border: Border.all(color: ThemeColor.black.withOpacity(0.6), width: 0.3),
                             borderRadius: BorderRadius.circular(8),
@@ -134,7 +134,7 @@ class _EditUserPhoneState extends State<EditUserPhone> {
                   //updateAddress();
                 });
               },
-              child: SubmitButton(text: "Update")
+              child: const SubmitButton(text: "Update")
           ),
         )
     );

@@ -1,11 +1,9 @@
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/screens/shared/client_search.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:craftmani/views/app_home/screens/shared/support_screen.dart';
 import 'package:craftmani/views/app_home/screens/catalogue/craft_man_catalogue.dart';
 import 'package:craftmani/views/app_home/screens/craft_men/craft_man_profile_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../authenticate/login.dart';
@@ -44,7 +42,7 @@ class _CraftManHomeState extends State<CraftManHome> {
         })
       },
       child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Icon(icon, size: 18, color: currentIndex == index ? Colors.white60 : Colors.white,)
       ),
     );
@@ -59,7 +57,7 @@ class _CraftManHomeState extends State<CraftManHome> {
       },
       child: Scaffold(
         extendBody: true,
-        backgroundColor: Color(0xFFEFEFEF),
+        backgroundColor: const Color(0xFFEFEFEF),
         body: pages[currentIndex],
         bottomNavigationBar: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -69,7 +67,7 @@ class _CraftManHomeState extends State<CraftManHome> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: ThemeColor.primary,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Color(0xFFE5E5E5),
                   blurRadius: 2,

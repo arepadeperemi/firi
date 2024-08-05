@@ -3,13 +3,10 @@ import 'dart:convert';
 import 'package:country_picker/country_picker.dart';
 import 'package:craftmani/exports.dart';
 import 'package:craftmani/views/app_home/pages/client_home.dart';
-import 'package:craftmani/widgets/back_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_session_manager/flutter_session_manager.dart';
 import 'package:transition/transition.dart';
 
-import '../../api/request.dart';
 
 class RegisterClientTwo extends StatefulWidget {
 
@@ -78,19 +75,19 @@ class _RegisterClientThreeState extends State<RegisterClientTwo> {
     return Scaffold(
       backgroundColor: ThemeColor.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              PreviousPage(icon: Icons.keyboard_arrow_down, color: ThemeColor.black),
-              SizedBox(height: 100,),
-              HeaderText(text: "Phone Number"),
-              SizedBox(height: 10),
-              Row(
+              const PreviousPage(icon: Icons.keyboard_arrow_down, color: ThemeColor.black),
+              const SizedBox(height: 100,),
+              const HeaderText(text: "Phone Number"),
+              const SizedBox(height: 10),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Expanded(child: DescriptionText(text: "To continue please enter a valid phone number craft men can reach you on")),
                   SizedBox(width: 10),
                   Text('3 / 3',
@@ -108,7 +105,7 @@ class _RegisterClientThreeState extends State<RegisterClientTwo> {
                     onTap: () => {
                       showCountryPicker(
                         context: context,
-                        countryListTheme: CountryListThemeData(
+                        countryListTheme: const CountryListThemeData(
                           padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                           margin: EdgeInsets.only(top: 40),
                           inputDecoration: InputDecoration(
@@ -128,8 +125,8 @@ class _RegisterClientThreeState extends State<RegisterClientTwo> {
                     },
                     child: Container(
                       width: 75,
-                      margin: EdgeInsets.only(top: 18),
-                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      margin: const EdgeInsets.only(top: 18),
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
                       height: 60,
                       decoration: BoxDecoration(
                         border: Border.all(color: ThemeColor.black.withOpacity(0.6), width: 0.3),

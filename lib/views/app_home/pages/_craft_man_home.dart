@@ -2,7 +2,6 @@ import 'package:craftmani/views/app_home/pages/craft_man_edit_profile.dart';
 import 'package:craftmani/views/app_home/screens/catalogue/catalogue.dart';
 import 'package:craftmani/views/app_home/screens/craft_men/reviews.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:craftmani/exports.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_switch/flutter_switch.dart';
@@ -25,7 +24,7 @@ class _CraftManHomeState extends State<CraftManHome> {
   int currentSelect = 0;
 
   List tabTitle = [Icons.comment, Icons.perm_media_rounded];
-  List tabContent = [ReviewsScreen(), const CatalogueScreen()];
+  List tabContent = [const ReviewsScreen(), const CatalogueScreen()];
 
   closePage() async {
     setState(() {
@@ -91,12 +90,12 @@ class _CraftManHomeState extends State<CraftManHome> {
                                                 transitionEffect: TransitionEffect.RIGHT_TO_LEFT)
                                             );
                                           },
-                                          child: MenuList(
+                                          child: const MenuList(
                                               title: 'Edit Profile',
                                               widget: Icon(Icons.arrow_forward_ios_outlined)
                                           ),
                                         ),
-                                        MenuList(
+                                        const MenuList(
                                             title: 'About',
                                             widget: Icon(Icons.arrow_forward_ios_outlined),
                                             bottomBorder: false,
@@ -217,7 +216,7 @@ class _CraftManHomeState extends State<CraftManHome> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    padding: EdgeInsets.only(right: 20, left: 20, bottom: 20),
+                    padding: const EdgeInsets.only(right: 20, left: 20, bottom: 20),
                     decoration: BoxDecoration(
                       border: Border(
                         bottom: BorderSide(
@@ -266,10 +265,10 @@ class _CraftManHomeState extends State<CraftManHome> {
                                     print(rating);
                                   },
                                 ),
-                                SizedBox(height: 10,),
-                                Row(
+                                const SizedBox(height: 10,),
+                                const Row(
                                   crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text('Arepade Peremi',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -337,7 +336,7 @@ class _CraftManHomeState extends State<CraftManHome> {
                             },
                             child: Container(
                               width: MediaQuery.of(context).size.width,
-                              padding: EdgeInsets.only(bottom: 5),
+                              padding: const EdgeInsets.only(bottom: 5),
                               /*decoration: BoxDecoration(
                                   border: Border(
                                       bottom: BorderSide(

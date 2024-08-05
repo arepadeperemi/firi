@@ -19,10 +19,10 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
 
   bool light1 = true;
 
-  final MaterialStateProperty<Icon?> thumbIcon =
-  MaterialStateProperty.resolveWith<Icon?>(
-        (Set<MaterialState> states) {
-      if (states.contains(MaterialState.selected)) {
+  final WidgetStateProperty<Icon?> thumbIcon =
+  WidgetStateProperty.resolveWith<Icon?>(
+        (Set<WidgetState> states) {
+      if (states.contains(WidgetState.selected)) {
         return const Icon(Icons.check);
       }
       return const Icon(Icons.close);
@@ -77,9 +77,9 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
                           Navigator.push(context, Transition(child: const EditUserName(),
                               transitionEffect: TransitionEffect.RIGHT_TO_LEFT))
                         },
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text('Arepade Peremi',
                               style: TextStyle(
                                 fontFamily: 'Poppins',
@@ -107,9 +107,9 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
                           Navigator.push(context, Transition(child: const EditUserPhone(),
                               transitionEffect: TransitionEffect.RIGHT_TO_LEFT))
                         },
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text('09075764656',
                               style: TextStyle(
                                 fontFamily: 'Poppins',
@@ -138,9 +138,9 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
                           Navigator.push(context, Transition(child: const EditCraftManAddress(),
                               transitionEffect: TransitionEffect.RIGHT_TO_LEFT))
                         },
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text('No.988 Ajah Axis, Lagos state',
                               style: TextStyle(
                                 fontSize: 10,
@@ -157,12 +157,12 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
                     Container(
                       padding: const EdgeInsets.only(top: 5, bottom: 10, left: 20, right: 10),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomRight: Radius.circular(10),
                           bottomLeft: Radius.circular(10)
                         ),
                         image: DecorationImage(
-                          image: AssetImage('assets/images/isometric-3d-map-with-location-pins-gps-navigation-vector-background_53562-4805-977687608'),
+                          image: const AssetImage('assets/images/isometric-3d-map-with-location-pins-gps-navigation-vector-background_53562-4805-977687608'),
                           fit: BoxFit.cover,
                           colorFilter: ColorFilter.mode(ThemeColor.white.withOpacity(0.9), BlendMode.overlay)
                         )
@@ -195,7 +195,7 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
                               ),
                             ],
                           ),
-                          Text('By switching on live location, you allow people looking for your services find you faster.',
+                          const Text('By switching on live location, you allow people looking for your services find you faster.',
                             style: TextStyle(
                               fontSize: 9,
                               fontFamily: 'Poppins',
@@ -216,8 +216,8 @@ class _CraftManProfileScreenState extends State<CraftManProfileScreen> {
                 ),
               ),
               const SizedBox(height: 10),
-              Flexible(
-                child: const SingleChildScrollView(
+              const Flexible(
+                child: SingleChildScrollView(
                   child: ReviewsScreen(),
                 ),
               )

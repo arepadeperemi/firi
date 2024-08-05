@@ -8,7 +8,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:lottie/lottie.dart';
 import 'package:transition/transition.dart';
 
-import '../../api/request.dart';
 import '../app_home/screens/craft_men/craft_man_home.dart';
 
 
@@ -131,14 +130,14 @@ class _RegisterCraftManFiveState extends State<RegisterCraftManFive> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              PreviousPage(color: ThemeColor.black,),
-              SizedBox(height: 100),
-              HeaderText(text: 'Location'),
-              SizedBox(height: 10),
-              Row(
+              const PreviousPage(color: ThemeColor.black,),
+              const SizedBox(height: 100),
+              const HeaderText(text: 'Location'),
+              const SizedBox(height: 10),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Expanded(child: DescriptionText(text: "We are almost there. Please provide your work or residential address so clients within your location can easily find you.")),
                   SizedBox(width: 10),
                   Text('5 / 5',
@@ -158,7 +157,7 @@ class _RegisterCraftManFiveState extends State<RegisterCraftManFive> {
                     width: MediaQuery.of(context).size.width,
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     height: 70,
-                    margin: EdgeInsets.only(top: 20),
+                    margin: const EdgeInsets.only(top: 20),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(color: ThemeColor.black.withOpacity(0.5), width: 0.5)
@@ -167,16 +166,16 @@ class _RegisterCraftManFiveState extends State<RegisterCraftManFive> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Icon(Icons.gps_fixed, size: 20),
-                        SizedBox(width: 15),
+                        const Icon(Icons.gps_fixed, size: 20),
+                        const SizedBox(width: 15),
                         Expanded(
                             child: TextField(
                               controller: addressController,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 11,
                                 fontFamily: 'Poppins'
                               ),
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 contentPadding: EdgeInsets.only(top: 1),
                                 border: InputBorder.none,
                                 errorText: "",

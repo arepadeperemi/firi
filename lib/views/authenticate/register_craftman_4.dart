@@ -6,8 +6,6 @@ import 'package:flutter_session_manager/flutter_session_manager.dart';
 import 'package:lottie/lottie.dart';
 import 'package:transition/transition.dart';
 
-import '../../api/convert.dart';
-import '../../api/request.dart';
 
 class RegisterCraftManFour extends StatefulWidget {
 
@@ -95,7 +93,7 @@ class _RegisterCraftManFourState extends State<RegisterCraftManFour> {
     return Scaffold(
       backgroundColor: ThemeColor.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -103,10 +101,10 @@ class _RegisterCraftManFourState extends State<RegisterCraftManFour> {
             const SizedBox(height: 100,),
             const HeaderText(text: "Select Craft"),
             const SizedBox(height: 10),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Expanded(child: DescriptionText(text: "We understand you are a craftman. Please what is your craft?")),
                 SizedBox(width: 10),
                 Text('4 / 5',
@@ -128,7 +126,7 @@ class _RegisterCraftManFourState extends State<RegisterCraftManFour> {
                 Container(
                   width: MediaQuery.of(context).size.width,
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 7),
-                  margin: EdgeInsets.only(top: 15),
+                  margin: const EdgeInsets.only(top: 15),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(color: ThemeColor.black.withOpacity(0.4), width: 0.5)
@@ -146,7 +144,7 @@ class _RegisterCraftManFourState extends State<RegisterCraftManFour> {
                               DropdownMenuItem(
                                   value: item,
                                   child: Text(item, overflow: TextOverflow.ellipsis,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontFamily: 'Poppins',
                                         fontSize: 12
                                       )
@@ -164,10 +162,10 @@ class _RegisterCraftManFourState extends State<RegisterCraftManFour> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(5),
-                  margin: EdgeInsets.only(left: 30),
+                  padding: const EdgeInsets.all(5),
+                  margin: const EdgeInsets.only(left: 30),
                   color: ThemeColor.white,
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(
@@ -175,7 +173,7 @@ class _RegisterCraftManFourState extends State<RegisterCraftManFour> {
                         size: 15,
                       ),
                       SizedBox(width: 5),
-                      const Text('I am a',
+                      Text('I am a',
                         style: TextStyle(
                           fontSize: 12,
                         )

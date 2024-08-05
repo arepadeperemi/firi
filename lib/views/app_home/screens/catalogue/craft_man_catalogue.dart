@@ -15,7 +15,7 @@ class CraftManCatalogueScreen extends StatefulWidget {
 class _CraftManCatalogueScreenState extends State<CraftManCatalogueScreen> {
 
   List<String> tabs = ['Catalogue', 'Upload'];
-  List screens = [CatalogueScreen(), UploadCatalogue()];
+  List screens = [const CatalogueScreen(), const UploadCatalogue()];
   int currentTab = 0;
 
 
@@ -27,32 +27,32 @@ class _CraftManCatalogueScreenState extends State<CraftManCatalogueScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.only(top: 70),
+              padding: const EdgeInsets.only(top: 70),
               width: double.maxFinite,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: ThemeColor.primary,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
+                  SizedBox(
                     width: double.maxFinite,
                     height: 30,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                        physics: ScrollPhysics(),
+                        physics: const ScrollPhysics(),
                         shrinkWrap: true,
                         itemBuilder: (_, index) => Container(
-                          padding: EdgeInsets.only(bottom: 10),
+                          padding: const EdgeInsets.only(bottom: 10),
                           width: MediaQuery.of(context).size.width / 2,
                           decoration: BoxDecoration(
-                              border: currentTab == index ? Border(
+                              border: currentTab == index ? const Border(
                                   bottom: BorderSide(
                                       color: Colors.white,
                                       width: 4
                                   )
-                              ) : Border()
+                              ) : const Border()
                           ),
                           child: GestureDetector(
                             onTap: () => {

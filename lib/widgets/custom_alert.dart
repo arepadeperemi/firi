@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -40,10 +39,10 @@ class CustomAlert extends StatelessWidget {
             Lottie.asset('assets/lottie/info.json',
               width: 20
             ),
-            SizedBox(width: 5),
+            const SizedBox(width: 5),
             Expanded(
               child: Container(
-                margin: EdgeInsets.only(top: 4),
+                margin: const EdgeInsets.only(top: 4),
                 child: Text(infoText,
                   style: const TextStyle(
                     color: ThemeColor.white,

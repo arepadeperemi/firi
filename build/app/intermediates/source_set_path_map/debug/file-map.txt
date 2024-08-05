@@ -1,18 +1,24 @@
-craftmani.com.craftmani.app-jetified-window-java-1.0.0-beta04-0 /home/peremi/.gradle/caches/transforms-3/006d93cd422dbc43e89591147c2de572/transformed/jetified-window-java-1.0.0-beta04/res
-craftmani.com.craftmani.app-jetified-play-services-base-18.1.0-1 /home/peremi/.gradle/caches/transforms-3/24bd5ae211488322aa8c48f41a7bee4d/transformed/jetified-play-services-base-18.1.0/res
-craftmani.com.craftmani.app-core-1.9.0-2 /home/peremi/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/res
-craftmani.com.craftmani.app-lifecycle-runtime-2.3.1-3 /home/peremi/.gradle/caches/transforms-3/76da31ad033c53187dd7271282d0f7d2/transformed/lifecycle-runtime-2.3.1/res
-craftmani.com.craftmani.app-jetified-window-1.0.0-beta04-4 /home/peremi/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
-craftmani.com.craftmani.app-jetified-annotation-experimental-1.3.0-5 /home/peremi/.gradle/caches/transforms-3/ec10578641139d45a328c567f48881a1/transformed/jetified-annotation-experimental-1.3.0/res
-craftmani.com.craftmani.app-jetified-play-services-basement-18.1.0-6 /home/peremi/.gradle/caches/transforms-3/f46b9773282b7a3d38863a46e0e0b5d1/transformed/jetified-play-services-basement-18.1.0/res
-craftmani.com.craftmani.app-debug-7 /home/peremi/studioProject/craftmani/android/app/src/debug/res
-craftmani.com.craftmani.app-main-8 /home/peremi/studioProject/craftmani/android/app/src/main/res
-craftmani.com.craftmani.app-pngs-9 /home/peremi/studioProject/craftmani/build/app/generated/res/pngs/debug
-craftmani.com.craftmani.app-resValues-10 /home/peremi/studioProject/craftmani/build/app/generated/res/resValues/debug
-craftmani.com.craftmani.app-rs-11 /home/peremi/studioProject/craftmani/build/app/generated/res/rs/debug
-craftmani.com.craftmani.app-mergeDebugResources-12 /home/peremi/studioProject/craftmani/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
-craftmani.com.craftmani.app-mergeDebugResources-13 /home/peremi/studioProject/craftmani/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-craftmani.com.craftmani.app-merged_res-14 /home/peremi/studioProject/craftmani/build/app/intermediates/merged_res/debug
-craftmani.com.craftmani.app-packaged_res-15 /home/peremi/studioProject/craftmani/build/geocoding_android/intermediates/packaged_res/debug
-craftmani.com.craftmani.app-packaged_res-16 /home/peremi/studioProject/craftmani/build/geolocator_android/intermediates/packaged_res/debug
-craftmani.com.craftmani.app-packaged_res-17 /home/peremi/studioProject/craftmani/build/shared_preferences_android/intermediates/packaged_res/debug
+craftmani.com.craftmani.app-lifecycle-livedata-2.6.2-0 C:\Users\The Tech Guy\.gradle\caches\transforms-3\0606b132ac0235c8ba61df07187987eb\transformed\lifecycle-livedata-2.6.2\res
+craftmani.com.craftmani.app-jetified-startup-runtime-1.1.1-1 C:\Users\The Tech Guy\.gradle\caches\transforms-3\109fbad245c73f1efa40a14a4ffdadf7\transformed\jetified-startup-runtime-1.1.1\res
+craftmani.com.craftmani.app-jetified-window-java-1.0.0-beta04-2 C:\Users\The Tech Guy\.gradle\caches\transforms-3\2a9fafe3923ed481a01c39d9929bbe12\transformed\jetified-window-java-1.0.0-beta04\res
+craftmani.com.craftmani.app-core-1.13.0-3 C:\Users\The Tech Guy\.gradle\caches\transforms-3\397724c82cf02367544d85aa30b5e3f1\transformed\core-1.13.0\res
+craftmani.com.craftmani.app-lifecycle-runtime-2.6.2-4 C:\Users\The Tech Guy\.gradle\caches\transforms-3\40ab4318fabafb45533d4cca4d78c039\transformed\lifecycle-runtime-2.6.2\res
+craftmani.com.craftmani.app-jetified-profileinstaller-1.3.0-5 C:\Users\The Tech Guy\.gradle\caches\transforms-3\6af68f1848ba6d2132e549bd85c87cdf\transformed\jetified-profileinstaller-1.3.0\res
+craftmani.com.craftmani.app-lifecycle-livedata-core-2.6.2-6 C:\Users\The Tech Guy\.gradle\caches\transforms-3\76ad7ca624b949c46efd922bdd4207b5\transformed\lifecycle-livedata-core-2.6.2\res
+craftmani.com.craftmani.app-lifecycle-viewmodel-2.6.2-7 C:\Users\The Tech Guy\.gradle\caches\transforms-3\797849345ffce399bcaa73e04f47cc84\transformed\lifecycle-viewmodel-2.6.2\res
+craftmani.com.craftmani.app-jetified-annotation-experimental-1.4.0-8 C:\Users\The Tech Guy\.gradle\caches\transforms-3\9de956088f07f4945d836c7e8239f8ed\transformed\jetified-annotation-experimental-1.4.0\res
+craftmani.com.craftmani.app-jetified-play-services-base-18.3.0-9 C:\Users\The Tech Guy\.gradle\caches\transforms-3\c45d1da241adfec2f3ead44284b667fa\transformed\jetified-play-services-base-18.3.0\res
+craftmani.com.craftmani.app-jetified-window-1.0.0-beta04-10 C:\Users\The Tech Guy\.gradle\caches\transforms-3\da1ded28c4428d183981be6c9d4f6d25\transformed\jetified-window-1.0.0-beta04\res
+craftmani.com.craftmani.app-core-runtime-2.2.0-11 C:\Users\The Tech Guy\.gradle\caches\transforms-3\f07e48711ee9aa0bbed18c0ddd36b1e1\transformed\core-runtime-2.2.0\res
+craftmani.com.craftmani.app-jetified-play-services-basement-18.3.0-12 C:\Users\The Tech Guy\.gradle\caches\transforms-3\fe2882608f6b224dd7e2489771c7bfc9\transformed\jetified-play-services-basement-18.3.0\res
+craftmani.com.craftmani.app-debug-13 C:\Users\The Tech Guy\StudioProjects\craftmani\android\app\src\debug\res
+craftmani.com.craftmani.app-main-14 C:\Users\The Tech Guy\StudioProjects\craftmani\android\app\src\main\res
+craftmani.com.craftmani.app-pngs-15 C:\Users\The Tech Guy\StudioProjects\craftmani\build\app\generated\res\pngs\debug
+craftmani.com.craftmani.app-resValues-16 C:\Users\The Tech Guy\StudioProjects\craftmani\build\app\generated\res\resValues\debug
+craftmani.com.craftmani.app-rs-17 C:\Users\The Tech Guy\StudioProjects\craftmani\build\app\generated\res\rs\debug
+craftmani.com.craftmani.app-mergeDebugResources-18 C:\Users\The Tech Guy\StudioProjects\craftmani\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+craftmani.com.craftmani.app-mergeDebugResources-19 C:\Users\The Tech Guy\StudioProjects\craftmani\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+craftmani.com.craftmani.app-merged_res-20 C:\Users\The Tech Guy\StudioProjects\craftmani\build\app\intermediates\merged_res\debug
+craftmani.com.craftmani.app-packaged_res-21 C:\Users\The Tech Guy\StudioProjects\craftmani\build\geocoding_android\intermediates\packaged_res\debug
+craftmani.com.craftmani.app-packaged_res-22 C:\Users\The Tech Guy\StudioProjects\craftmani\build\geolocator_android\intermediates\packaged_res\debug
+craftmani.com.craftmani.app-packaged_res-23 C:\Users\The Tech Guy\StudioProjects\craftmani\build\shared_preferences_android\intermediates\packaged_res\debug
